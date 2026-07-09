@@ -21,7 +21,6 @@
 
   <meta name="robots" content="index, follow" />
 
-  <!-- 修改成你的真实网址 -->
   <link
     rel="canonical"
     href="https://xuan996-labo.github.io/ia1-420-314-ah/"
@@ -44,14 +43,23 @@
     content="https://xuan996-labo.github.io/ia1-420-314-ah/"
   />
 
-  <!-- 如果没有这张图片，可以先删掉这一行 -->
   <meta
     property="og:image"
-    content="https://xuan996-labo.github.io/ia1-420-314-ah/images/preview.png"
+    content="https://xuan996-labo.github.io/ia1-420-314-ah/images/coverphoto_lime2.png"
   />
-
-  <!-- 如果还没有 favicon，可以暂时不加 -->
-  <!-- <link rel="icon" href="images/favicon.png" /> -->
+  <meta property="og:image:width" content="736" />
+  <meta property="og:image:height" content="1104" />
+  <meta property="og:locale" content="fr_CA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Xuan Wang | Data Engineer • IoT & AI Portfolio" />
+  <meta
+    name="twitter:description"
+    content="Portfolio présentant mes projets en Data Engineering, IoT, Intelligence Artificielle et Cloud."
+  />
+  <meta
+    name="twitter:image"
+    content="https://xuan996-labo.github.io/ia1-420-314-ah/images/coverphoto_lime2.png"
+  />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,6 +69,7 @@
     href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;700;800&display=swap"
     rel="stylesheet"
   />
+  <link rel="preload" as="image" href="images/coverphoto_lime2.png" fetchpriority="high" />
 
   <!-- Tailwind -->
   <script>
@@ -97,8 +106,9 @@
 
   <link rel="stylesheet" href="css/shared.css" />
   <link rel="stylesheet" href="css/home.css" />
-</head>
+  </head>
   <body class="bg-white font-sans text-ink antialiased">
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="site-header">
       <nav aria-label="Navigation principale">
         <a href="index.html">Xuan Wang</a>
@@ -115,12 +125,16 @@
       </nav>
     </header>
 
-    <main class="overflow-hidden">
+    <main id="main-content" class="overflow-hidden">
       <section id="accueil" class="relative min-h-[620px] overflow-hidden sm:min-h-[600px] lg:min-h-[548px]">
         <img
           class="absolute inset-0 h-full w-full object-cover opacity-60"
           src="images/coverphoto_lime2.png"
+          width="736"
+          height="1104"
           alt=""
+          fetchpriority="high"
+          decoding="async"
         />
         <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white/20"></div>
 
@@ -155,7 +169,10 @@
         <img
           class="absolute bottom-0 right-[-70px] z-0 hidden w-[min(78vw,560px)] object-contain md:block md:right-[-90px] md:w-[420px] lg:right-[108px] lg:top-[46px] lg:w-[520px]"
           src="images/silhouette.png"
+          width="565"
+          height="632"
           alt="Portrait illustration of Xuan Wang"
+          decoding="async"
         />
       </section>
 
@@ -185,7 +202,11 @@
                     <img
                       class="h-[118px] w-full object-cover"
                       src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg"
+                      width="736"
+                      height="1159"
                       alt="Data warehouse architecture blueprint"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p class="font-mono text-[11px] leading-[1.45]">
@@ -207,7 +228,11 @@
                     <img
                       class="h-[118px] w-full object-cover"
                       src="images/79c2fe3f1e98c2655fd5777ba7ec7426.jpg"
+                      width="1158"
+                      height="1536"
                       alt="Predictive analytics dashboard"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p class="font-mono text-[11px] leading-[1.45] text-white/90">
@@ -229,7 +254,11 @@
                     <img
                       class="h-[118px] w-full object-cover"
                       src="images/6cf80dbc409bb3b3c4f5fc2a6021e914.jpg"
+                      width="736"
+                      height="1472"
                       alt="Interactive dashboard interface"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <p class="font-mono text-[11px] leading-[1.45]">

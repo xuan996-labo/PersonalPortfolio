@@ -212,7 +212,7 @@ body {
 }
 
 .portfolio-cta h2 {
-  color: white;
+  color: #0001bb;
   font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -221,8 +221,8 @@ body {
 }
 
 .portfolio-cta a {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #0001bb;
+  color: #0001bb;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.05em;

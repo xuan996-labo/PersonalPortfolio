@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xuan996-labo.github.io/ia1-420-314-ah/sitemap.xml
