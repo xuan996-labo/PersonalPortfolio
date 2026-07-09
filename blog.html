@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Xuan Wang</title>
+    <meta
+      name="description"
+      content="Journal de Xuan Wang sur les architectures data, l'IoT et la visualisation."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      window.tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1a1b26",
+              moss: "#454558",
+              muted: "#5c6274",
+              acid: "#c7e600",
+              wash: "#fbf8ff",
+              electric: "#0001bb",
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "sans-serif"],
+              display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
+              mono: ['"Courier Prime"', '"Courier New"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+
+  <body class="bg-wash font-sans text-ink antialiased">
+    <header class="site-header">
+      <nav aria-label="Navigation principale">
+        <a href="index.html">Xuan Wang</a>
+
+        <div>
+          <a href="index.html">Accueil</a>
+          <a href="about.html">Sur moi</a>
+          <a href="cv.html">CV</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html" aria-current="page">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a class="language-pill" href="#">FR | EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto w-full max-w-[1440px] px-5 pb-12 pt-12 sm:px-8 lg:px-10">
+      <section class="blog-header">
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <span class="rounded-full border border-[#0001BB] px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.05em] text-[#0001BB]">
+              Journal
+            </span>
+            <span class="h-px w-12 bg-electric" aria-hidden="true"></span>
+            <span class="text-xs font-bold uppercase tracking-[0.05em] text-muted">Edition 2024</span>
+          </div>
+          <h1>Blog.</h1>
+        </div>
+      </section>
+
+      <section class="blog-layout">
+        <article class="featured-article">
+          <div class="featured-image">
+            <img src="images/green_wallpaper.jpg" alt="Green abstract glass texture" />
+            <span>&Agrave; LA UNE</span>
+          </div>
+
+          <div class="article-meta">
+            <span>Cloud Computing</span>
+            <span aria-hidden="true"></span>
+            <span>12 min de lecture</span>
+          </div>
+
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Tempus lectus quis morbi non ut. Et suspendisse maecenas amet nulla
+            congue eget. Volutpat tincidunt convallis mauris congue eget purus lectus erat egestas.
+          </p>
+
+          <a class="read-link" href="portfolio.html"><span>Lire la suite</span><img class="inline-icon read-arrow" src="images/Icon_arrow_horiz.svg" alt="" aria-hidden="true" /></a>
+        </article>
+
+        <aside class="blog-aside">
+          <section class="recent-list" aria-labelledby="recent-title">
+            <h2 id="recent-title">Recent</h2>
+
+            <article class="recent-card">
+              <p>Architectures</p>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <a href="portfolio.html">Explorer <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" /></a>
+            </article>
+
+            <article class="recent-card">
+              <p>Data Viz</p>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <a href="portfolio.html">Explorer <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" /></a>
+            </article>
+
+            <article class="recent-card">
+              <p>IA Generative</p>
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+              <a href="portfolio.html">Explorer <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" /></a>
+            </article>
+          </section>
+
+          <section class="newsletter" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Pellentesque convallis velit vitae malesuada congue aliquam dignissim.
+            </p>
+            <form>
+              <label for="newsletter-email">Votre email</label>
+              <input id="newsletter-email" name="email" type="email" />
+              <button type="submit">S'abonner <img class="inline-icon" src="images/Icon_email.svg" alt="" aria-hidden="true" /></button>
+            </form>
+          </section>
+        </aside>
+      </section>
+
+      <section class="blog-quote">
+        <p>01 &mdash; Philosophie</p>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur. Ac mauris nec aliquet donec. Vehicula ipsum phasellus sollicitudin ut.
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Architectural Precision. All rights reserved.</p>
+      <div>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#">Source Code</a>
+      </div>
+    </footer>
+  </body>
+</html>

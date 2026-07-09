@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xuan Wang | Accueil</title>
+    <meta
+      name="description"
+      content="Portfolio statique de Xuan Wang, ingenieur IoT et AI."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      window.tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1a1c1c",
+              moss: "#454932",
+              muted: "#767960",
+              sage: "#c6c9ab",
+              acid: "#dfff00",
+              paper: "#faf9f9",
+              bone: "#f4f3f3",
+              wash: "#fbf8ff",
+              violet: "#7b68ee",
+              powder: "#b0e0e6",
+              electric: "#0001bb",
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "sans-serif"],
+              display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
+              mono: ['"Courier Prime"', '"Courier New"', "monospace"],
+            },
+            boxShadow: {
+              hard: "4px 4px 0 #1a1c19",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body class="bg-white font-sans text-ink antialiased">
+    <header class="site-header">
+      <nav aria-label="Navigation principale">
+        <a href="index.html">Xuan Wang</a>
+
+        <div>
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="about.html">Sur moi</a>
+          <a href="cv.html">CV</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a class="language-pill" href="#">FR | EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden">
+      <section id="accueil" class="relative min-h-[620px] overflow-hidden sm:min-h-[600px] lg:min-h-[548px]">
+        <img
+          class="absolute inset-0 h-full w-full object-cover opacity-60"
+          src="images/coverphoto_lime2.png"
+          alt=""
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-white/0 via-white/0 to-white/20"></div>
+
+        <div class="relative z-10 mx-auto flex min-h-[620px] w-full max-w-[1440px] items-center px-6 py-16 sm:min-h-[600px] sm:px-12 lg:min-h-[548px] lg:px-[80px] lg:py-0">
+          <div class="w-full max-w-[1200px]">
+            <p class="mb-2 inline-flex rounded-sm bg-acid px-2 py-1 text-[8px] font-bold uppercase leading-none tracking-normal text-[#647400]">
+              Available for freelance
+            </p>
+
+            <h1 class="relative max-w-[920px] font-display text-[4.4rem] font-extrabold uppercase leading-[0.9] tracking-normal sm:text-[5.5rem] lg:text-[6.35rem]">
+              Xuan
+              <span class="relative inline-block px-[0.06em]">
+                <span class="absolute inset-x-[-0.08em] inset-y-[0.08em] -z-10 -skew-x-6 rounded-full bg-[#EFFF00]"></span>
+                Wang
+              </span>
+            </h1>
+
+            <div class="mt-9 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+              <p class="font-display text-[2rem] font-bold leading-tight tracking-normal text-moss sm:text-[2.3rem] lg:text-[2.45rem]">
+                IoT <span class="text-sage">|</span> AI Engineer
+              </p>
+              <div class="hidden flex-col items-end gap-2 sm:flex">
+                <p class="text-[9px] font-medium uppercase leading-[14px] tracking-normal text-muted">
+                  Based in Montréal, QC
+                </p>
+                <span class="h-12 w-px bg-sage" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="absolute bottom-0 right-[-70px] z-0 hidden w-[min(78vw,560px)] object-contain md:block md:right-[-90px] md:w-[420px] lg:right-[108px] lg:top-[46px] lg:w-[520px]"
+          src="images/silhouette.png"
+          alt="Portrait illustration of Xuan Wang"
+        />
+      </section>
+
+      <section id="expertise" class="bg-bone px-6 py-10 sm:px-8 lg:px-[52px] lg:py-12">
+        <div class="mx-auto flex w-full max-w-7xl flex-col gap-12">
+          <div class="grid gap-8 md:grid-cols-[minmax(0,1fr)_auto] md:items-start">
+            <h2 class="max-w-[560px] font-display text-[2.2rem] font-bold leading-[1.05] tracking-normal sm:text-[2.55rem]">
+              Lorem ipsum dolor sit amet consectetur.
+            </h2>
+            <p class="text-[9px] font-medium uppercase leading-[14px] tracking-normal text-muted md:pt-4">
+              [ 01 / Expertise ]
+            </p>
+          </div>
+
+          <div class="bg-[#eeecfc] px-4 py-8 sm:px-7 lg:px-8 lg:py-9">
+            <div class="grid gap-6 lg:grid-cols-3">
+              <article class="border-2 border-[#1a1c19] bg-[#EFFF00] text-[#1a1c19]">
+                <div class="flex items-center justify-between border-b-2 border-[#1a1c19] bg-black/5 px-2 py-2 font-mono text-[9px] font-bold uppercase tracking-normal">
+                  <span>Project #01</span>
+                  <span>2023 - 2024</span>
+                </div>
+                <div class="space-y-3 p-3">
+                  <h3 class="font-mono text-[1.35rem] font-bold leading-[1.1]">
+                    Lorem ipsum risus dolor nec
+                  </h3>
+                  <div class="overflow-hidden border border-black/20 bg-white/40 p-px">
+                    <img
+                      class="h-[118px] w-full object-cover"
+                      src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg"
+                      alt="Data warehouse architecture blueprint"
+                    />
+                  </div>
+                  <p class="font-mono text-[11px] leading-[1.45]">
+                    Lorem ipsum dolor sit amet consectetur. Auctor faucibus cursus nunc elit nulla aliquam feugiat eu.
+                  </p>
+                </div>
+              </article>
+
+              <article class="border-2 border-[#1a1c19] bg-[#7B68EE] text-white">
+                <div class="flex items-center justify-between border-b-2 border-[#1a1c19] bg-black/10 px-2 py-2 font-mono text-[9px] font-bold uppercase tracking-normal">
+                  <span class="text-white/70">Project #02</span>
+                  <span>Fall 2023</span>
+                </div>
+                <div class="space-y-3 p-3">
+                  <h3 class="font-mono text-[1.35rem] font-bold leading-[1.1]">
+                    Lorem ipsum non odio amet
+                  </h3>
+                  <div class="overflow-hidden border border-white/20 bg-white/20 p-px">
+                    <img
+                      class="h-[118px] w-full object-cover"
+                      src="images/79c2fe3f1e98c2655fd5777ba7ec7426.jpg"
+                      alt="Predictive analytics dashboard"
+                    />
+                  </div>
+                  <p class="font-mono text-[11px] leading-[1.45] text-white/90">
+                    Lorem ipsum dolor sit amet consectetur. Mattis elit sit ut risus pellentesque placerat.
+                  </p>
+                </div>
+              </article>
+
+              <article class="border-2 border-[#1a1c19] bg-[#B0E0E6] text-[#1a1c19]">
+                <div class="flex items-center justify-between border-b-2 border-[#1a1c19] bg-black/5 px-2 py-2 font-mono text-[9px] font-bold uppercase tracking-normal">
+                  <span>Project #03</span>
+                  <span>Summer 2023</span>
+                </div>
+                <div class="space-y-3 p-3">
+                  <h3 class="font-mono text-[1.35rem] font-bold leading-[1.1]">
+                    Lorem ipsum nibh donec tellus
+                  </h3>
+                  <div class="overflow-hidden border border-black/20 bg-white/40 p-px">
+                    <img
+                      class="h-[118px] w-full object-cover"
+                      src="images/6cf80dbc409bb3b3c4f5fc2a6021e914.jpg"
+                      alt="Interactive dashboard interface"
+                    />
+                  </div>
+                  <p class="font-mono text-[11px] leading-[1.45]">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="relative overflow-hidden rounded-t-[28px] border border-white/60 bg-[#F8F8FF] px-5 py-16 text-center backdrop-blur-xl sm:px-10 lg:px-24 lg:py-16">
+        <div class="absolute -left-16 top-0 size-32 rounded-full bg-acid opacity-40 blur-3xl" aria-hidden="true"></div>
+
+        <div class="relative mx-auto flex max-w-4xl flex-col items-center">
+          <p class="mb-4 text-[11px] font-medium uppercase leading-[14px] tracking-normal text-muted">
+            Get in touch
+          </p>
+          <h2 class="font-display text-[2.75rem] font-extrabold leading-[1.03] tracking-normal sm:text-[3.25rem]">
+            Lorem ipsum dolor sit amet consectetur.
+          </h2>
+          <p class="mt-7 max-w-md text-sm leading-5 text-moss">
+            Lorem ipsum dolor sit amet consectetur. Egestas bibendum velit hac leo senectus elementum bibendum.
+          </p>
+          <div class="mt-7 flex flex-wrap justify-center gap-4">
+            <a
+              class="inline-flex min-h-10 items-center justify-center rounded-full bg-black px-8 py-4 text-center text-[11px] font-medium uppercase leading-[14px] tracking-normal text-white"
+              href="mailto:xuan@example.com"
+            >
+              Envoyer un email
+            </a>
+            <a
+              class="inline-flex min-h-10 items-center justify-center rounded-full border border-ink px-8 py-4 text-center text-[11px] font-medium uppercase leading-[14px] tracking-normal text-ink"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Linkedin
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Architectural Precision. All rights reserved.</p>
+      <div>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#">Source Code</a>
+      </div>
+    </footer>
+  </body>
+</html>

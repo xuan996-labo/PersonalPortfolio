@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Xuan Wang</title>
+    <meta
+      name="description"
+      content="Portfolio de projets de Xuan Wang autour de l'IoT, de la data et des interfaces web."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      window.tailwind = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#1a1b26",
+              moss: "#454558",
+              muted: "#5c6274",
+              acid: "#c7e600",
+              wash: "#fbf8ff",
+              electric: "#0001bb",
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "sans-serif"],
+              display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
+              mono: ['"Courier Prime"', '"Courier New"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+
+  <body class="bg-wash font-sans text-ink antialiased">
+    <header class="site-header">
+      <nav aria-label="Navigation principale">
+        <a href="index.html">Xuan Wang</a>
+
+        <div>
+          <a href="index.html">Accueil</a>
+          <a href="about.html">Sur moi</a>
+          <a href="cv.html">CV</a>
+          <a href="portfolio.html" aria-current="page">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a class="language-pill" href="#">FR | EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto w-full max-w-[1536px] px-5 pb-12 pt-20 sm:px-8 lg:px-10">
+      <section class="mb-8 border-b border-electric pb-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <h1 class="font-sans text-[clamp(4.5rem,13vw,7.5rem)] font-black uppercase leading-none tracking-[-0.05em] text-[#C7E600]">
+            Portfolio<span class="text-ink">.</span>
+          </h1>
+          <div class="flex items-center gap-4">
+            <span class="border border-[#0001BB] px-4 py-2 text-xs font-bold uppercase tracking-[0.05em] text-[#0001BB]">
+              Selected Works
+            </span>
+            <span class="text-3xl font-black leading-none text-[#0001BB]" aria-hidden="true">*</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-grid" aria-label="Selected portfolio projects">
+        <article class="project-card project-card-large">
+          <div class="project-heading">
+            <div>
+              <p>Python / Hardware</p>
+              <h2>Lorem ipsum pulvinar</h2>
+            </div>
+            <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="image-frame large-image">
+            <img src="images/coverphoto_lime2.png" alt="Abstract green glass interface visual" />
+          </div>
+          <p class="project-copy">
+            Lorem ipsum dolor sit amet consectetur. Turpis vitae non mauris quis. Tortor penatibus at morbi massa
+            phasellus sed pretium lacinia sit.
+          </p>
+        </article>
+
+        <article class="project-card project-card-side">
+          <div class="project-heading compact">
+            <div>
+              <p>IoT / Web</p>
+              <h2>Lorem ipsum cras</h2>
+            </div>
+          </div>
+          <div class="image-frame side-image">
+            <img src="images/e528df1219f80dc0cd2bf3a9090a15f3.jpg" alt="Soft mobile dashboard mockup" />
+          </div>
+          <p class="project-copy">
+            Lorem ipsum dolor sit amet consectetur. Arcu tellus fames pharetra egestas varius proin faucibus odio tristique.
+          </p>
+        </article>
+
+        <article class="project-card project-card-small">
+          <div class="project-heading compact">
+            <div>
+              <p>Cloud / Data</p>
+              <h2>Lorem ipsum sagittis</h2>
+            </div>
+          </div>
+          <div class="image-frame small-image">
+            <img src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg" alt="Blue technical dashboard" />
+          </div>
+          <p class="project-copy">
+            Lorem ipsum dolor sit amet consectetur. Nulla suspendisse nulla leo eget hendrerit.
+          </p>
+        </article>
+
+        <article class="project-card project-card-wide">
+          <div class="wide-copy">
+            <p class="project-kicker">Systems</p>
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Sed mollis viverra lobortis egestas cursus.
+              Quam ornare vestibulum purus pellentesque sem.
+            </p>
+            <div class="tag-row">
+              <span>OpenCV</span>
+              <span>C++</span>
+              <span>Redis</span>
+            </div>
+          </div>
+          <div class="image-frame wide-image">
+            <img src="images/63af46c283e5f1e315839a6587387824.jpg" alt="Stacked mobile cards" />
+          </div>
+        </article>
+
+        <article class="project-card project-card-feature">
+          <div class="image-frame feature-image">
+            <img src="images/79c2fe3f1e98c2655fd5777ba7ec7426.jpg" alt="Colorful visual analytics project" />
+          </div>
+          <div class="feature-copy">
+            <div class="feature-kicker">
+              <span>Creative Tech</span>
+              <span aria-hidden="true"></span>
+            </div>
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Hendrerit tortor semper at ipsum ullamcorper adipiscing.
+              Mus mattis phasellus commodo nunc nulla scelerisque nulla.
+            </p>
+            <a href="contact.html">View case study</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="portfolio-cta">
+        <h2>Ready for the next project?</h2>
+        <a href="contact.html">Get in touch</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Architectural Precision. All rights reserved.</p>
+      <div>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#">Source Code</a>
+      </div>
+    </footer>
+  </body>
+</html>
