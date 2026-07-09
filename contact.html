@@ -16,36 +16,8 @@
     <meta property="og:image" content="https://xuan996-labo.github.io/ia1-420-314-ah/images/coverphoto_lime2.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <script>
-      window.tailwind = {
-        theme: {
-          extend: {
-            colors: {
-              ink: "#1a1b26",
-              moss: "#454558",
-              muted: "#5c6274",
-              acid: "#c7e600",
-              wash: "#fbf8ff",
-              electric: "#0001bb",
-            },
-            fontFamily: {
-              sans: ['"Inter"', "system-ui", "sans-serif"],
-              display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
-              mono: ['"Courier Prime"', '"Courier New"', "monospace"],
-            },
-          },
-        },
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
 
@@ -62,7 +34,7 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="blog.html">Blog</a>
           <a href="contact.html" aria-current="page">Contact</a>
-          <a class="language-pill" href="#">FR | EN</a>
+          <span class="language-pill" aria-label="Langue actuelle: francais">FR | EN</span>
         </div>
       </nav>
     </header>
@@ -109,17 +81,17 @@
             <div class="form-row">
               <label>
                 Votre nom
-                <input type="text" name="name" placeholder="Prenom Nom" />
+                <input type="text" name="name" autocomplete="name" placeholder="Prenom Nom" />
               </label>
               <label>
                 Votre email
-                <input type="email" name="email" placeholder="nom@example.com" />
+                <input type="email" name="email" autocomplete="email" placeholder="nom@example.com" />
               </label>
             </div>
 
             <label>
               Sujet
-              <input type="text" name="subject" placeholder="Projet Architectural / Proposition" />
+              <input type="text" name="subject" autocomplete="off" placeholder="Projet Architectural / Proposition" />
             </label>
 
             <label>
@@ -127,11 +99,11 @@
               <textarea name="message" rows="8" placeholder="Decrivez votre vision..."></textarea>
             </label>
 
-            <button type="submit">Envoyer <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" /></button>
+            <button type="submit">Envoyer <img class="inline-icon" src="images/Icon.svg" width="9" height="9" alt="" aria-hidden="true" loading="lazy" decoding="async" /></button>
           </form>
 
           <div class="image-strip">
-            <img src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg" width="736" height="1159" alt="" loading="lazy" decoding="async" />
+            <img src="images/7e21f01f6ccad3d17c2ef966032d425c-520.jpg" width="520" height="819" alt="" loading="lazy" fetchpriority="low" decoding="async" />
             <span>Grid reference 001.24</span>
           </div>
         </section>
@@ -143,7 +115,7 @@
       <div>
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#">Source Code</a>
+        <a href="https://github.com/xuan996-labo/ia1-420-314-ah" target="_blank" rel="noreferrer">Source Code</a>
       </div>
     </footer>
   </body>

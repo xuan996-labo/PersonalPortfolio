@@ -16,36 +16,8 @@
     <meta property="og:image" content="https://xuan996-labo.github.io/ia1-420-314-ah/images/coverphoto_lime2.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <script>
-      window.tailwind = {
-        theme: {
-          extend: {
-            colors: {
-              ink: "#1a1b26",
-              moss: "#454558",
-              muted: "#5c6274",
-              acid: "#c7e600",
-              wash: "#fbf8ff",
-              electric: "#0001bb",
-            },
-            fontFamily: {
-              sans: ['"Inter"', "system-ui", "sans-serif"],
-              display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
-              mono: ['"Courier Prime"', '"Courier New"', "monospace"],
-            },
-          },
-        },
-      };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
   </head>
 
@@ -62,7 +34,7 @@
           <a href="portfolio.html" aria-current="page">Portfolio</a>
           <a href="blog.html">Blog</a>
           <a href="contact.html">Contact</a>
-          <a class="language-pill" href="#">FR | EN</a>
+          <span class="language-pill" aria-label="Langue actuelle: francais">FR | EN</span>
         </div>
       </nav>
     </header>
@@ -89,9 +61,10 @@
               <p>Python / Hardware</p>
               <h2>Lorem ipsum pulvinar</h2>
             </div>
-            <img class="inline-icon" src="images/Icon.svg" alt="" aria-hidden="true" />
+            <img class="inline-icon" src="images/Icon.svg" width="9" height="9" alt="" aria-hidden="true" loading="lazy" decoding="async" />
           </div>
           <div class="image-frame large-image">
+            <!-- Main visual asset for the portfolio page; keep eager and high priority for LCP. -->
             <img src="images/coverphoto_lime2.png" width="736" height="1104" alt="Abstract green glass interface visual" fetchpriority="high" decoding="async" />
           </div>
           <p class="project-copy">
@@ -108,7 +81,7 @@
             </div>
           </div>
           <div class="image-frame side-image">
-            <img src="images/e528df1219f80dc0cd2bf3a9090a15f3.jpg" width="1200" height="900" alt="Soft mobile dashboard mockup" loading="lazy" decoding="async" />
+            <img src="images/e528df1219f80dc0cd2bf3a9090a15f3.jpg" width="1200" height="900" alt="Soft mobile dashboard mockup" loading="lazy" fetchpriority="low" decoding="async" />
           </div>
           <p class="project-copy">
             Lorem ipsum dolor sit amet consectetur. Arcu tellus fames pharetra egestas varius proin faucibus odio tristique.
@@ -123,7 +96,7 @@
             </div>
           </div>
           <div class="image-frame small-image">
-            <img src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg" width="736" height="1159" alt="Blue technical dashboard" loading="lazy" decoding="async" />
+            <img src="images/7e21f01f6ccad3d17c2ef966032d425c-520.jpg" width="520" height="819" alt="Blue technical dashboard" loading="lazy" fetchpriority="low" decoding="async" />
           </div>
           <p class="project-copy">
             Lorem ipsum dolor sit amet consectetur. Nulla suspendisse nulla leo eget hendrerit.
@@ -145,13 +118,13 @@
             </div>
           </div>
           <div class="image-frame wide-image">
-            <img src="images/63af46c283e5f1e315839a6587387824.jpg" width="1200" height="1680" alt="Stacked mobile cards" loading="lazy" decoding="async" />
+            <img src="images/63af46c283e5f1e315839a6587387824-640.jpg" width="640" height="896" alt="Stacked mobile cards" loading="lazy" fetchpriority="low" decoding="async" />
           </div>
         </article>
 
         <article class="project-card project-card-feature">
           <div class="image-frame feature-image">
-            <img src="images/79c2fe3f1e98c2655fd5777ba7ec7426.jpg" width="1158" height="1536" alt="Colorful visual analytics project" loading="lazy" decoding="async" />
+            <img src="images/79c2fe3f1e98c2655fd5777ba7ec7426-640.jpg" width="640" height="849" alt="Colorful visual analytics project" loading="lazy" fetchpriority="low" decoding="async" />
           </div>
           <div class="feature-copy">
             <div class="feature-kicker">
@@ -179,7 +152,7 @@
       <div>
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#">Source Code</a>
+        <a href="https://github.com/xuan996-labo/ia1-420-314-ah" target="_blank" rel="noreferrer">Source Code</a>
       </div>
     </footer>
   </body>

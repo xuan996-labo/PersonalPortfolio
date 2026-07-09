@@ -14,6 +14,7 @@
   --color-electric: #0001bb;
   --color-blue-800: var(--color-electric);
   --color-acid: #c7e600;
+  --color-acid-text: #647400;
   --color-yellow-400: var(--color-acid);
   --color-acid-bright: #efff00;
   --color-page-bg: #f8f8ff;
@@ -32,9 +33,9 @@
   --color-portfolio-soft: #e8e6f6;
   --color-badge-text: #647400;
   --shadow-hard: 4px 4px 0 var(--color-ink-soft);
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Anybody", Impact, system-ui, sans-serif;
-  --font-mono: "Courier Prime", "Courier New", monospace;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: Impact, "Arial Black", system-ui, sans-serif;
+  --font-mono: "Courier New", Consolas, monospace;
   --text-xs: 0.75rem;
   --text-lg: 1.125rem;
   --text-2xl: 1.5rem;
@@ -89,24 +90,23 @@ img {
   max-width: 100%;
 }
 
+#expertise,
+#contact,
+.project-grid,
+.portfolio-cta,
+.blog-layout,
+.blog-quote,
+.contact-frame,
+.resume-column {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
 .inline-icon {
   display: inline-block;
   flex: 0 0 auto;
   height: 1em;
   object-fit: contain;
-  vertical-align: -0.12em;
-  width: 1em;
-}
-
-.form-panel button span[aria-hidden="true"],
-.project-heading > span[aria-hidden="true"] {
-  background: url("../images/Icon.svg") center / contain no-repeat;
-  display: inline-block;
-  flex: 0 0 auto;
-  font-size: 0;
-  height: 1em;
-  line-height: 0;
-  overflow: hidden;
   vertical-align: -0.12em;
   width: 1em;
 }
@@ -191,6 +191,10 @@ header.site-header {
   line-height: var(--leading-4);
   padding: 2px 0;
   text-transform: uppercase;
+}
+
+.site-header nav > div .language-pill {
+  display: inline-flex;
 }
 
 .site-header nav > div a[aria-current="page"] {

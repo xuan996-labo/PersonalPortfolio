@@ -22,7 +22,7 @@ body {
 }
 
 .contact-title h1 {
-  color: #c7e600;
+  color: #647400;
   font-size: clamp(4.5rem, 9vw, 5rem);
   font-weight: 900;
   letter-spacing: -0.04em;
@@ -177,7 +177,7 @@ body {
 
 .image-strip span {
   background: #d4bbff;
-  color: white;
+  color: #1a1b26;
   font-size: 10px;
   letter-spacing: 0.1em;
   padding: 4px 16px;

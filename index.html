@@ -61,51 +61,10 @@
     content="https://xuan996-labo.github.io/ia1-420-314-ah/images/coverphoto_lime2.png"
   />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100,400;100,700;100,800&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;700;800&display=swap"
-    rel="stylesheet"
-  />
   <link rel="preload" as="image" href="images/coverphoto_lime2.png" fetchpriority="high" />
 
-  <!-- Tailwind -->
-  <script>
-    window.tailwind = {
-      theme: {
-        extend: {
-          colors: {
-            ink: "#1a1c1c",
-            moss: "#454932",
-            muted: "#767960",
-            sage: "#c6c9ab",
-            acid: "#dfff00",
-            paper: "#faf9f9",
-            bone: "#f4f3f3",
-            wash: "#fbf8ff",
-            violet: "#7b68ee",
-            powder: "#b0e0e6",
-            electric: "#0001bb",
-          },
-          fontFamily: {
-            sans: ['"Inter"', "system-ui", "sans-serif"],
-            display: ['"Anybody"', "Impact", "system-ui", "sans-serif"],
-            mono: ['"Courier Prime"', '"Courier New"', "monospace"],
-          },
-          boxShadow: {
-            hard: "4px 4px 0 #1a1c19",
-          },
-        },
-      },
-    };
-  </script>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
   <link rel="stylesheet" href="css/shared.css" />
-  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body class="bg-white font-sans text-ink antialiased">
     <a class="skip-link" href="#main-content">Aller au contenu</a>
@@ -120,13 +79,14 @@
           <a href="portfolio.html">Portfolio</a>
           <a href="blog.html">Blog</a>
           <a href="contact.html">Contact</a>
-          <a class="language-pill" href="#">FR | EN</a>
+          <span class="language-pill" aria-label="Langue actuelle: francais">FR | EN</span>
         </div>
       </nav>
     </header>
 
     <main id="main-content" class="overflow-hidden">
       <section id="accueil" class="relative min-h-[620px] overflow-hidden sm:min-h-[600px] lg:min-h-[548px]">
+        <!-- Main visual asset for the home page; keep eager and high priority for LCP. -->
         <img
           class="absolute inset-0 h-full w-full object-cover opacity-60"
           src="images/coverphoto_lime2.png"
@@ -154,7 +114,7 @@
 
             <div class="mt-9 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
               <p class="font-display text-[2rem] font-bold leading-tight tracking-normal text-moss sm:text-[2.3rem] lg:text-[2.45rem]">
-                IoT <span class="text-sage">|</span> AI Engineer
+                IoT <span class="text-sage" aria-hidden="true">|</span> AI Engineer
               </p>
               <div class="hidden flex-col items-end gap-2 sm:flex">
                 <p class="text-[9px] font-medium uppercase leading-[14px] tracking-normal text-muted">
@@ -168,10 +128,11 @@
 
         <img
           class="absolute bottom-0 right-[-70px] z-0 hidden w-[min(78vw,560px)] object-contain md:block md:right-[-90px] md:w-[420px] lg:right-[108px] lg:top-[46px] lg:w-[520px]"
-          src="images/silhouette.png"
-          width="565"
-          height="632"
+          src="images/silhouette-520.png"
+          width="520"
+          height="582"
           alt="Portrait illustration of Xuan Wang"
+          fetchpriority="low"
           decoding="async"
         />
       </section>
@@ -201,11 +162,12 @@
                   <div class="overflow-hidden border border-black/20 bg-white/40 p-px">
                     <img
                       class="h-[118px] w-full object-cover"
-                      src="images/7e21f01f6ccad3d17c2ef966032d425c.jpg"
-                      width="736"
-                      height="1159"
+                      src="images/7e21f01f6ccad3d17c2ef966032d425c-520.jpg"
+                      width="520"
+                      height="819"
                       alt="Data warehouse architecture blueprint"
                       loading="lazy"
+                      fetchpriority="low"
                       decoding="async"
                     />
                   </div>
@@ -217,7 +179,7 @@
 
               <article class="border-2 border-[#1a1c19] bg-[#7B68EE] text-white">
                 <div class="flex items-center justify-between border-b-2 border-[#1a1c19] bg-black/10 px-2 py-2 font-mono text-[9px] font-bold uppercase tracking-normal">
-                  <span class="text-white/70">Project #02</span>
+                  <span class="text-white">Project #02</span>
                   <span>Fall 2023</span>
                 </div>
                 <div class="space-y-3 p-3">
@@ -227,11 +189,12 @@
                   <div class="overflow-hidden border border-white/20 bg-white/20 p-px">
                     <img
                       class="h-[118px] w-full object-cover"
-                      src="images/79c2fe3f1e98c2655fd5777ba7ec7426.jpg"
-                      width="1158"
-                      height="1536"
+                      src="images/79c2fe3f1e98c2655fd5777ba7ec7426-640.jpg"
+                      width="640"
+                      height="849"
                       alt="Predictive analytics dashboard"
                       loading="lazy"
+                      fetchpriority="low"
                       decoding="async"
                     />
                   </div>
@@ -253,11 +216,12 @@
                   <div class="overflow-hidden border border-black/20 bg-white/40 p-px">
                     <img
                       class="h-[118px] w-full object-cover"
-                      src="images/6cf80dbc409bb3b3c4f5fc2a6021e914.jpg"
-                      width="736"
-                      height="1472"
+                      src="images/6cf80dbc409bb3b3c4f5fc2a6021e914-480.jpg"
+                      width="480"
+                      height="960"
                       alt="Interactive dashboard interface"
                       loading="lazy"
+                      fetchpriority="low"
                       decoding="async"
                     />
                   </div>
@@ -309,7 +273,7 @@
       <div>
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#">Source Code</a>
+        <a href="https://github.com/xuan996-labo/ia1-420-314-ah" target="_blank" rel="noreferrer">Source Code</a>
       </div>
     </footer>
   </body>

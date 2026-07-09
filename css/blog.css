@@ -8,7 +8,7 @@ body {
 }
 
 .blog-header h1 {
-  color: #c7e600;
+  color: #647400;
   font-size: clamp(4.5rem, 10vw, 5rem);
   font-weight: 900;
   letter-spacing: -0.04em;
@@ -214,7 +214,13 @@ body {
 }
 
 .newsletter input {
-  display: none;
+  background: transparent;
+  border: 1px solid #0001bb;
+  color: #1a1b26;
+  display: block;
+  font: inherit;
+  padding: 12px;
+  width: 100%;
 }
 
 .newsletter button {
